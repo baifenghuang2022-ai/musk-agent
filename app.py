@@ -3,7 +3,7 @@ from openai import OpenAI
 
 app = Flask(__name__)
 
-with open(r'C:\Users\90611\Desktop\musk_transcript.txt', 'r', encoding='utf-8') as f:
+with open('musk_transcript.txt', 'r', encoding='utf-8') as f:
     transcript = f.read()
 
 client = OpenAI(
